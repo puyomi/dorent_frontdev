@@ -1,20 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Ionicon from "react-ionicons";
 
 const Navigation = props => {
   return (
     <nav>
+      <Link to="/">
+        <span>로고 |</span>
+      </Link>
       <Link to="/digital">
-        <span>디지털/가전</span>
+        <span>상품화면 |</span>
       </Link>
-      <Link to="/clothes">
-        <span>의류/패션</span>
+      <Link to="/upload">
+        <span>
+          <Ionicon icon="md-camera" fontSize="18px" />
+          물건 등록하기 |
+        </span>
       </Link>
-      <Link to="/hobby">
-        <span>생활/취미</span>
-      </Link>
-      <Link to="/etc">
-        <span>기타/잡화</span>
+      <Link to="/auth">
+        <span>
+          <Ionicon icon="md-person" fontSize="18px" />
+          로그인
+        </span>
       </Link>
     </nav>
   );
