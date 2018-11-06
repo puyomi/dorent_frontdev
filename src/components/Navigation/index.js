@@ -8,7 +8,7 @@ const Navigation = props => {
       <Link to="/">
         <span>로고 |</span>
       </Link>
-      <Link to="/digital">
+      <Link to="/products">
         <span>상품화면 |</span>
       </Link>
       <Link to="/upload">

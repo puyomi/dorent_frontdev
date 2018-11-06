@@ -12,7 +12,7 @@ const App = () => [
 const MainFrame = () => (
   <Switch>
     <Route exact path="/" render={()=>"메인화면"} />
-    <Route exact path="/digital" render={()=>"상품화면"} />
+    <Route exact path="/products" render={()=>"상품화면"} />
     <Route exact path="/upload" render={()=>"업로드화면"} />
     <Route exact path="/auth" render={()=>"로그인화면"} />
   </Switch>
