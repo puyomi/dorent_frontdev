@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./styles.module.scss";
 
-import { Navigation, Footer } from "./components";
-import { BodyContainer } from "./containers";
+import { Footer } from "./components";
+import { BodyContainer, HeaderContainer } from "./containers";
 
 class App extends Component {
   render() {
     return [
-      <Navigation key={2} />,
+      <HeaderContainer key={2} />,
       <BodyContainer key={4} />,
       // <Footer key={5} />
     ];

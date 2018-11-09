@@ -2,6 +2,12 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 
 class BodyContainer extends Component {
+  state = {
+    user: {
+      isLoggedIn: false,
+      username: null
+    }
+  }
   render() {
     return (
       <Switch>
