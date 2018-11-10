@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import { BrowserRouter as Router } from "react-router-dom";
+import Root from "./Root"
+import Promise from "promise-polyfill";
+
+// To add to window
+if (!window.Promise) {
+  window.Promise = Promise;
+}
 
 ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
+  <Root />,
   document.getElementById("root")
 );

@@ -1,23 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const LoginForm = props => {
+const LoginForm = ({
+  usernameValue,
+  passwordValue,
+  handleInputChange,
+  handleSubmit
+}) => {
   return (
     <div>
-      <form onSubmit={props.handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input
           name="username"
           type="username"
           placeholder="아이디를 입력해주세요"
-          onChange={props.handleInputChange}
-          value={props.usernameValue}
+          onChange={handleInputChange}
+          value={usernameValue}
         />
         <input
           name="password"
           type="password"
           placeholder="비밀번호를 입력해주세요"
-          onChange={props.handleInputChange}
-          value={props.passwordValue}
+          onChange={handleInputChange}
+          value={passwordValue}
         />
         <input type="submit" value="로그인" />
       </form>

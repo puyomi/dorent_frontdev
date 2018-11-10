@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { Navigation, NavAlert } from "../../components";
+import { Navigation, NavAlert } from "components";
 
 class HeaderContainer extends Component {
   render() {
-    return [<Navigation />, <NavAlert />];
+    return [<Navigation key={2} />, <NavAlert key={3} />];
   }
 }
 

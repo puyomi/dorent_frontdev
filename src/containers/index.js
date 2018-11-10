@@ -1,4 +1,5 @@
-import BodyContainer from "./BodyContainer/BodyContainer";
-import HeaderContainer from "./HeaderContainer/HeaderContainer"
+import BodyContainer from "./BodyContainer";
+import HeaderContainer from "./HeaderContainer"
+import AuthContainer from "./AuthContainer"
 
-export { BodyContainer, HeaderContainer };
+export { BodyContainer, HeaderContainer, AuthContainer };

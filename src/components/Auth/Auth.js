@@ -11,6 +11,7 @@ const Auth = props => {
       <br />
       <span onClick={props.changeLogin}>로그인</span>
       <span onClick={props.changeSignup}>회원가입</span>
+      <LoginForm />
       {props.action === "login" && <LoginForm />}
       {props.action === "signup" && <SignupForm />}
     </div>
